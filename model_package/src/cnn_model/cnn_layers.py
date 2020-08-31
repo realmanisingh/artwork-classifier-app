@@ -1,6 +1,5 @@
-# Importing libraries
 import tensorflow as tf
-import config
+import config.package_config as config
 
 # Input layer
 inputs = tf.keras.Input(shape=config.IMG_SHAPE)

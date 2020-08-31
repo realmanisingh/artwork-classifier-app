@@ -22,4 +22,3 @@ model.compile(loss=SparseCategoricalCrossentropy(from_logits=True),
                   optimizer = RMSprop(lr=config.LEARNING_RATE/10),
                   metrics=['accuracy'])
 
-

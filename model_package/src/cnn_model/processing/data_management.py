@@ -7,7 +7,7 @@ from tensorflow.data.experimental import cardinality
 
 # Creating the data loader for the training set
 train_data = image_dataset_from_directory(
-    directory="../../../../data/train/",
+    directory="../../../data/train/",
     shuffle=True,
     validation_split=0.2,
     subset='training',
@@ -18,7 +18,7 @@ train_data = image_dataset_from_directory(
 
 # Creating the data loader for the validation set
 validation_data = image_dataset_from_directory(
-    directory="../../../../data/train/",
+    directory="../../../data/train/",
     shuffle=True,
     validation_split=0.2,
     subset='validation',

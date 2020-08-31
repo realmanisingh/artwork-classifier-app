@@ -4,7 +4,6 @@ from tensorflow.keras import Model
 from tensorflow.keras.losses import SparseCategoricalCrossentropy
 from tensorflow.keras.optimizers import RMSprop
 
-
 # Creating the CNN model architecture
 inputs = layers.inputs
 x = layers.preprocess_input(inputs)

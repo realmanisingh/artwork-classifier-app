@@ -1,5 +1,9 @@
+import sys
+# Giving the file access to modules in parent directories
+sys.path.append("..")
 import config.package_config as config
 from tensorflow.keras.preprocessing import image_dataset_from_directory
+
 
 def load_data():
     """

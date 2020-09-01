@@ -16,3 +16,5 @@ def make_prediction(*, input_image):
     return prediction
 
 
+test = make_prediction(input_image="data/train/c5/img_10000.jpg")
+print(test)

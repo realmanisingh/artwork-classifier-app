@@ -1,7 +1,7 @@
 import tensorflow as tf
 import numpy as np
 
-def resize_image(*, image_path: str) -> Image:
+def resize_image(*, image_path: str) -> tf.Tensor:
     """
     Resizing an image to 256x256
     param image_path: A path to the image in jpeg format
@@ -13,3 +13,6 @@ def resize_image(*, image_path: str) -> Image:
     resized_image = tf.image.resize(image_arr, [256, 256])
     
     return resized_image
+
+test = resize_image(image_path="../../../../data/train/c0/img_34.jpg")
+print(test.shape.as_list())

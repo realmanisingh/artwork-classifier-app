@@ -1,4 +1,5 @@
 from cnn_architecture import model
+from numpy import argmax
 from pipeline import Pipeline
 
 def make_prediction(*, input_image):
@@ -10,12 +11,12 @@ def make_prediction(*, input_image):
     
     pipeline = Pipeline(model)
     resized_image = pipeline.resize_image(input_image)
-    prediction = pipeline.make_prediction(resized_image)
+    prediction = argmax(pipeline.make_prediction(resized_image))
     
     return prediction
 
 
 
 
-test = make_prediction(input_image="../../../data/train/c0/img_34.jpg")
+test = make_prediction(input_image="../../../data/train/c5/img_10000.jpg")
 print(test)

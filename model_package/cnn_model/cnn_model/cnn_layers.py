@@ -1,5 +1,5 @@
 import tensorflow as tf
-import config.package_config as config
+import cnn_model.config.package_config as config
 
 # Input layer
 inputs = tf.keras.Input(shape=config.IMG_SHAPE)

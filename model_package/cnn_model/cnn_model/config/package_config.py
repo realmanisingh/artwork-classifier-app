@@ -3,8 +3,8 @@ import sys
 
 
 # Configuring the directories that will be needed for the package
-TRAINED_WEIGHTS = pathlib.Path("../../../model/trained_weights/cp.ckpt")
-DATA_DIR = pathlib.Path("../../../data/train/")
+TRAINED_WEIGHTS = pathlib.Path("../../model/trained_weights/cp.ckpt")
+DATA_DIR = pathlib.Path("../../data/train/")
 
 # Image configurations
 IMG_SIZE = (256, 256)

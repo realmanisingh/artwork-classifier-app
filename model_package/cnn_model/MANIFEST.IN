@@ -1,0 +1,13 @@
+include *.txt
+include *.md
+include *.cfg
+recursive-include ./cnn_model/*
+
+include cnn_model/data/train
+include cnn_model/VERSION
+
+include ./requirements.txt
+exclude *.log
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]

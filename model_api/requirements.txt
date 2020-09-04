@@ -1,5 +1,8 @@
 fastapi==0.61.1
 uvicorn==0.11.8
+python-multipart==0.0.5
+pytest==6.0.1
+Pillow==7.0.0
 
 # Local CNN model package
 -e "/Users/mani/Desktop/distracted-driver-detection-app/model_package/cnn_model"

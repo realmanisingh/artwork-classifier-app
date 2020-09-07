@@ -14,7 +14,7 @@ DESCRIPTION = 'Deploy CNN model for classification of drivers'
 URL = 'https://github.com/realmanisingh/distracted-driver-detection-app'
 EMAIL = 'realmanisingh@gmail.com'
 AUTHOR = 'Mani Singh'
-REQUIRES_PYTHON = '>=3.7.6'
+REQUIRES_PYTHON = '>=3.7.5'
 
 
 # What packages are required for this module to be executed?

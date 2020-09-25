@@ -1,10 +1,10 @@
 import pathlib
-import sys
-
+import cnn_model
 
 # Configuring the directories that will be needed for the package
-TRAINED_WEIGHTS = pathlib.Path("../../model/trained_weights/cp.ckpt")
-DATA_DIR = pathlib.Path("../../data/train/")
+PACKAGE_ROOT = pathlib.Path(cnn_model.__file__).resolve().parent
+TRAINED_WEIGHTS = PACKAGE_ROOT / "trained_weights/cp.ckpt"
+DATA_DIR = PACKAGE_ROOT / "data"
 
 # Image configurations
 IMG_SIZE = (256, 256)

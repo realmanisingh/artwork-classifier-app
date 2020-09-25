@@ -1,5 +1,6 @@
 import cnn_model.config.package_config as config
-from .cnn_layers import inputs, preprocess_input, base_model, global_average, dropout, prediction
+from cnn_model.cnn_layers import inputs, preprocess_input, base_model, global_average, dropout, prediction
+
 from tensorflow.keras import Model
 from tensorflow.keras.losses import SparseCategoricalCrossentropy
 from tensorflow.keras.optimizers import RMSprop

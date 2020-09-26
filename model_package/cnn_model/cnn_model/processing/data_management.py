@@ -1,13 +1,13 @@
-import sys
+#import sys
 # Giving the file access to modules in parent directories
-sys.path.append("..")
-import config.package_config as config
+#sys.path.append("..")
+from cnn_model.config import package_config as config
 from tensorflow.keras.preprocessing import image_dataset_from_directory
 from tensorflow.data.experimental import cardinality
 
 # Creating the data loader for the training set
 train_data = image_dataset_from_directory(
-    directory="../data/train/",
+    directory=config.TRAIN_DATA,
     shuffle=True,
     validation_split=0.2,
     subset='training',
@@ -18,7 +18,7 @@ train_data = image_dataset_from_directory(
 
 # Creating the data loader for the validation set
 validation_data = image_dataset_from_directory(
-    directory="../data/train/",
+    directory=config.TRAIN_DATA,
     shuffle=True,
     validation_split=0.2,
     subset='validation',
@@ -31,4 +31,6 @@ validation_data = image_dataset_from_directory(
 val_batches = cardinality(validation_data)
 test_data = validation_data.take(val_batches // 5)
 validation_data = validation_data.skip(val_batches // 5)
-    
+
+# Creating an image batch from the training data in order to use for testing the CNN layers
+image_batch, label_batch = next(iter(train_data))

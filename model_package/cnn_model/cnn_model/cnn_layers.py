@@ -22,6 +22,3 @@ dropout = tf.keras.layers.Dropout(0.2)
 
 # Dense layer in order to get a prediction
 prediction = tf.keras.layers.Dense(10)
-
-import os
-print(os.getcwd())

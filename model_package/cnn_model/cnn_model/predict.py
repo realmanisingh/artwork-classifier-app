@@ -1,6 +1,6 @@
-from .cnn_architecture import model
+from cnn_model.cnn_architecture import model
 from numpy import argmax
-from .pipeline import Pipeline
+from cnn_model.pipeline import Pipeline
 
 def make_prediction(*, input_image):
     """

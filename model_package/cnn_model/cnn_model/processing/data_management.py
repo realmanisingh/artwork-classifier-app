@@ -1,6 +1,3 @@
-#import sys
-# Giving the file access to modules in parent directories
-#sys.path.append("..")
 from cnn_model.config import package_config as config
 from tensorflow.keras.preprocessing import image_dataset_from_directory
 from tensorflow.data.experimental import cardinality
